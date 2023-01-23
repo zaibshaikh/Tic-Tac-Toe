@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="/image/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      /* Add this to override the default theme */
+      body {
+        background-color: #1e1e1e;
+        width: 100vw;
+        height: 100vh;
+        color: #f5f5f5;
+        margin: auto;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      /* Change the color of the table */
+      table {
+        background-color: #1e1e1e;
+        border-color: #f5f5f5;
+        margin-bottom: 50px;
+      }
+      /* Change the color of the cells */
+      td {
+        background-color: #1e1e1e;
+        border-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td id="0"></td>
+        <td id="1"></td>
+        <td id="2"></td>
+      </tr>
+      <tr>
+        <td id="3"></td>
+        <td id="4"></td>
+        <td id="5"></td>
+      </tr>
+      <tr>
+        <td id="6"></td>
+        <td id="7"></td>
+        <td id="8"></td>
+      </tr>
+    </table>
+    <button id="resetButton" class="btn waves-effect waves-light">Reset</button>
+    <div id="winPopup" style="display: none">
+      <p>Player X wins!</p>
+      <button id="okButton" class="btn waves-effect waves-light">OK</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
